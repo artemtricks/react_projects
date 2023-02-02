@@ -6,6 +6,30 @@ body {
   ol, ul {
     padding-left: 30px;
   }
+
+  button {
+    padding: 3px 5px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 4px;
+    transition: background-color, .2s ease-in-out;
+  }
+
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.089);
+  }
+
+  button:active {
+    background-color: rgba(0, 0, 0, 0.342);
+  }
+
+  #status {
+    margin-left: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-size: large;
+  }
   
   .board-row:after {
     clear: both;
@@ -21,15 +45,15 @@ body {
     background: #fff;
     border: 1px solid #999;
     float: left;
-    font-size: 24px;
+    font-size: 54px;
     font-weight: bold;
-    line-height: 34px;
-    height: 34px;
+    line-height: 64px;
+    height: 64px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 64px;
   }
   
   .square:focus {

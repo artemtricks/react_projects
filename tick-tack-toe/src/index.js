@@ -87,7 +87,7 @@ function Square(props) {
       
       const moves = history.map((step, move) => {
         const desc = move ? 
-        'Перейти к ходу #' + move :
+        'Перейти к ходу №' + move :
         'К началу игры';
         return (
           <li key={move}>
@@ -97,8 +97,9 @@ function Square(props) {
       });
 
       let status;
+      
     if (winner) {
-      status = 'Выиграл: ' + winner;
+      status = 'ВЫИГРАЛ: ' + winner;
     } else {
       status = 'Следующий ход: ' + (this.state.xIsNext ? 'X' : 'O');
     }
@@ -112,7 +113,7 @@ function Square(props) {
           />
           </div>
           <div className="game-info">
-            <div>{status}</div>
+            <div id='status'>{status}</div>
             <ol>{moves}</ol>
           </div>
         </div>
